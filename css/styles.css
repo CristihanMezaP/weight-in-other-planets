@@ -1,0 +1,126 @@
+/* Configuración de REMS */
+html {
+    font-size: 62.5%; /**? Reset para REMS - 62.5%  = 10px de 16px **/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+body{
+    background-color:rgb(16, 5, 29);
+}
+.back{
+    z-index: 0;
+    width: 100%;
+    height:100vh;
+    position: fixed;
+}
+.content-info{
+    position: absolute;
+    z-index: 10;
+}
+/*Header*/
+h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-bottom: 3rem;
+}
+/*Content - Left content*/
+.content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    gap: 8%;
+    justify-content: space-evenly;
+}
+.text-form{
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    line-height: 2.2rem;
+}
+.input{
+    margin: 2rem 0 0 2rem;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.text-form img{
+    max-width: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.img-form{
+    text-align: center;
+}
+.text-answer{
+    flex: 0 0 50%;
+    padding: 2rem 2rem 0 2rem;
+}
+.planetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: space-evenly;
+}
+.planeta{
+    min-width: 15rem;
+    flex: 0 0 30%;
+    margin-bottom: 2rem;
+}
+.planeta img{
+    width: 80%;
+}
+.planeta:last-of-type{
+    margin-bottom: 0;
+}
+.planeta i{
+    color: #f1d136;
+    font-style: normal;
+}
+span{
+    color: #f1d136;
+}
+#weight.focus{
+    border: none;
+    background-color: #f1d136;
+}
+.button-yellow{
+    color: rgb(66, 38, 11);
+    border: none;
+    background-color: #f1d136;
+    padding: 1rem;
+    transition: all ease-in-out 0.25s;
+}
+.button-yellow:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+#alert{
+    color: #dde017;
+    margin-top: 2rem;
+}
+@media (max-width: 800px){
+    .content{
+        flex-direction: column;
+    }
+}
+.credits p{
+    color: #f1d136;
+}

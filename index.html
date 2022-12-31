@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su peso en en otros planetas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Condensed:wght@300;400&family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content-info">
+        <h1>
+            Your Weight in Other Planets
+        </h1>
+        <div class="content">
+            <div class="text-form">
+                <div class="img-form">
+                    <img src="Images/astronauta.png" alt="Astronauta">
+                </div>
+                <p>
+                    Ever wonder what you might weigh on Mars or The Moon? <br> Here's your chance to find out.
+                    <br> You only should enter your weight in kg to find it!
+                </p>
+                <div class="input">
+                    <input type="number" name="peso" id="weight" placeholder="Enter your weight here:">
+                    <button type="submit" class="button-yellow" onclick="calculate_weights()">Calculate</button>
+                </div>
+                <p id="alert"></p>
+                <div class="credits">
+                    <p> &copy Diseñado por Cristihan Meza</p>
+                </div>
+            </div>
+            <div class="text-answer">
+                <div class="planetas">
+                    <div class="planeta">
+                        <img src="Images/mercurio.png" alt="">
+                        <p>Su peso en <i>mercurio</i> seria de <span id="Mercurio">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/venus.png" alt="">
+                        <p>Su peso en <i>Venus</i> seria de <span id="Venus">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/planeta-tierra.png" alt="">
+                        <p>Su peso en la <i>Tierra</i> seria de <span id="Tierra">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/luna.png" alt="">
+                        <p>Su peso en la <i>Luna</i> seria de <span id="Luna">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/marte.png" alt="">
+                        <p>Su peso en <i>Marte</i> seria de <span id="Marte">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/saturno.png" alt="">
+                        <p>Su peso en <i>Jupiter</i> seria de <span id="Jupiter">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/urano.png" alt="">
+                        <p>Su peso en <i>Saturno</i> seria de <span id="Saturno">0</span> Kg</p>
+                    </div>
+                    <div class="planeta">
+                        <img src="Images/neptuno.png" alt="">
+                        <p>Su peso en <i>Urano</i> seria de <span id="Urano">0</span> Kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back" id="particles-js"></div>
+</body>
+<script src="Js/script.js"></script>
+<script src="Js/particles.js"></script>
+<script src="Js/particulas.js"></script>
+</html>
